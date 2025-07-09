@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./OnlineSnake
+    ports:
+      - "5173:5173"
+    #volumes:
+    #  - ./OnlineSnake:/app
+    environment:
+      - HOST=0.0.0.0
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./OnlineSnakeServer
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./OnlineSnakeServer:/app
