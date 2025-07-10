@@ -1,5 +1,6 @@
-Clone this repository, then, inside the root folder:
 ```
+git clone https://github.com/OnlineSnakeOrganization/OnlineSnake_FrontendPlusBackendAbgabe.git
+cd OnlineSnake_FrontendPlusBackendAbgabe
 docker-compose up --build
 ```
 This will run the Frontend and Backend Server.
